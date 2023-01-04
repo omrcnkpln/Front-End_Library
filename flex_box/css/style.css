@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+}
+h1{
+    font-family: 'aller';
+}
+header,footer,aside,article,hgroup,section,nav{
+    display: block;
+}
+body{
+    text-align:center;
+    display: -webkit-box;
+    -webkit-box-pack:center;    
+}
+#ana_kisim{
+    width: 1000px;
+    margin: 15px auto;
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-box-flex:1;
+    border: 2px solid red;
+}
+#ana_baslik{
+    border-bottom: 1px dashed red;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+#ana_menu{
+    /*display: -webkit-box;*/
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    padding:3px;
+}
+#ana_menu li{
+    display: inline-block;
+    list-style: none;
+    font: bold 20px Calibri;
+    color: white;
+    /*padding-left: 50px;*/
+    /*-webkit-box-flex:1;*/
+    /*-webkit-box-orient:horizontal;*/
+}
+#ana_menu li:first-child{
+    float: left;
+}
+#ana_menu li:last-child{
+    float: right;
+}
+#kisim2{
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+}
+#ana_makale{
+    -webkit-box-flex:1;
+    margin:25px;
+}
+#banner_kismi{
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-color: yellow;
+}   
+#banner_kismi p{
+    font: bold 20px Calibri;
+    text-decoration: blink;
+}
+#ana_makale footer{
+    text-align: right;
+}
+#alt_kisim{
+    padding: 10px;
+    border-top: 1px dashed red;
+}
+
+
+
+
+
+
+
+
+
+
+

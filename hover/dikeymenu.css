@@ -1,0 +1,49 @@
+.menu 
+{width: 250px;  margin: 80px 0px 0px 150px;}
+
+.menu ul
+{ list-style: none;}
+.menu ul li a
+{
+	background: #2B2933;
+	font: 14px verdana,arial;
+	color: #fff;
+	display: block;
+	padding: 20px 0 ;
+	text-decoration: none;
+	text-align: center;
+}
+#anasayfa
+{border-left: 8px solid #945C24;}
+#anasayfa:hover
+{background: #945C24;}
+
+#hakkimda
+{border-left: 8px solid #2D6282;}
+#hakkimda:hover
+{background: #2D6282;}
+
+#dersler
+{border-left: 8px solid #66120A;}
+#dersler:hover
+{background: #66120A;}
+
+#notlar
+{border-left: 8px solid #870E3F;}
+#notlar:hover
+{background: #870E3F;}
+
+#forum
+{border-left: 8px solid #15451F;}
+#forum:hover
+{background: #15451F;}
+
+#iletisim
+{border-left: 8px solid #9C5E40;}
+#iletisim:hover
+{background: #9C5E40;}
+
+#anasayfa,#hakkimda,#dersler,#notlar,#forum,#iletisim{ transition-duration:0.5s ;}
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+
+<head>
+  <meta charset="utf-8">
+  <title>Video player example</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="player">
+    <!-- <video controls webkit-playsinline="true" playsinline="true">
+      <source src="video/sintel-short.mp4" type="video/mp4">
+      <source src="video/sintel-short.mp4" type="video/webm">
+    </video> -->
+
+    <!-- <div class="controls">
+      <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+      <button class="stop" data-icon="S" aria-label="stop"></button>
+      <div class="timer">
+        <div></div><span aria-label="timer">00:00</span>
+      </div>
+      <button class="rwd" data-icon="B" aria-label="rewind"></button>
+      <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+    </div> -->
+  </div>
+
+  <button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+  <button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+  <button onclick="checkAutoplay()" type="button">Check autoplay status</button><br>
+
+  <video id="myVideo" width="320" height="176" controls="controls">
+    <source src="video/mov_bbb.mp4" type="video/mp4">
+    <source src="video/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="iphone-inline-video.min.js"></script>
+  <script src="custom-player.js"></script>
+</body>
+
+</html>

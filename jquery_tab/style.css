@@ -1,0 +1,34 @@
+*{
+	 padding: 0;
+	 margin: 0;
+	 list-style: none;
+	 border:0;
+	 font-family: arial;
+}
+#tab{
+	padding: 15px;
+	width: 400px;
+}
+.tab{
+	margin-bottom: 15px;
+}
+.tab a{
+	background: #eee;
+	padding: 10px 20px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #111;
+	margin-right: 5px;
+}
+.aktif{
+	background: blue;
+	color: #fff;
+}
+.tab_content{
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-left-color: #ddd;
+	border-top-color: #ddd;
+}

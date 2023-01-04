@@ -1,0 +1,60 @@
+.haci_container{
+	width:200px;
+	height: 400px;
+	margin: 50px auto;
+}
+.haci{
+	position: relative;
+	background: url(images/haci.jpg);
+	background-size: 100%;
+	width: 150px;
+	height:150px; 
+	top:0px;
+	-webkit-animation:haci_yatir ease 3s infinite;
+	/* z-index: ;*/
+}
+
+.haci_golge{
+	position: relative;
+	height: 16px;
+	background: #999;
+	opacity: 0.75;
+	border-radius: 100%;
+	margin: 0px;
+	top: ;
+	width: 85px;
+	left: 17%;
+	-webkit-animation:golge_yatir ease 3s infinite;
+}
+@-webkit-keyframes haci_yatir{
+	25%{-webkit-transform:rotate(-30deg);}
+	50%{-webkit-transform:rotate(0deg);}
+	75%{-webkit-transform:rotate(30deg);}
+	100%{-webkit-transform:rotate(0deg);}
+}
+@-webkit-keyframes golge_yatir{
+	25%{
+		height: 10px;
+		width: 125px;
+		opacity: 0.25;
+		left: -12%;
+	}
+	50%{
+		height: 16px;
+		width: 85px;
+		left: 17%;
+		opacity: 0.75;
+	}
+	75%{
+		height: 10px;
+		width: 125px;
+		opacity: 0.25;
+		left: 23%;
+	}
+	100%{
+		height: 16px;
+		width: 85px;
+		left: 17%;
+		opacity: 0.75;
+	}
+}

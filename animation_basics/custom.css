@@ -1,0 +1,180 @@
+.box {
+  background-color: #ddd;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  /* transform: translate(-50%,-50%); */
+  /* transition: background-color 1s 2s, transform 2 1s; */
+}
+.box .a1 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .a1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  /* ilki süre ikinci delay */
+  transition: transform 1s 0.3s, color 0.3s;
+}
+.box {
+  animation: swing 2s 1s forwards ease;
+  transform-origin: top left;
+
+  /* transform: rotate(45deg);  */
+}
+.box:hover {
+  transition: 0.3s 1s;
+  background-color: pink;
+}
+.box:hover p {
+  transform: rotate(315deg);
+  color: #000;
+}
+.bike {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 200px;
+  overflow: hidden;
+}
+.road {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  /* width: 100px;
+    height: 100px; */
+}
+.cloud {
+  position: relative;
+  animation: wind 10s linear 1s infinite reverse;
+  animation-fill-mode: backwards;
+  top: 0;
+}
+.bike-c_1 {
+  /* height: 100px;  */
+  /* position: relative; */
+  margin: 0 auto;
+
+  background-color: red;
+}
+.bike-c_1 img {
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  z-index: 10;
+  transform: rotateY(180deg);
+  transition: transform 0.5s 0s ease;
+}
+.road:hover .bike-c_1 img {
+  animation-name: go1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bike-c_2 {
+  /* height: 100px;  */
+  /* position: relative; */
+  margin: 0 auto;
+
+  /* position: absolute; */
+}
+.bike-c_2 img {
+  position: absolute;
+
+  width: 20%;
+  top: -10%;
+  z-index: 9;
+  /* transform: rotateY(180deg); */
+  transition: transform 0.5s 0s ease;
+}
+.road:hover .bike-c_2 img {
+  animation: go2 3s forwards infinite cubic-bezier(0.17, 0.67, 0.83, 0.67)
+      reverse,
+    jump 0.3s 2s ease;
+
+  /* animation-name: go2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
+    animation-direction: reverse; */
+  /* animation-timing-function: cubic-bezier(.17,.67,.83,.67); */
+}
+.bike:hover {
+  cursor: pointer;
+}
+.bike-c_1 img:hover {
+  /* transform: translateX(1300px) ; */
+}
+.brdr {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 10px dashed #fff;
+  z-index: 0;
+}
+@keyframes swing {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(45deg);
+  }
+  70% {
+    transform: rotateZ(40deg);
+  }
+  100% {
+    transform: rotateZ(45deg);
+  }
+}
+@keyframes wind {
+  from {
+    /* left: -400px; */
+    margin-right: 300px;
+  }
+  to {
+    /* left: 100%; */
+    margin-right: -300px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+@keyframes go1 {
+  from {
+    transform: translateX(-200px) rotateY(180deg);
+  }
+  to {
+    transform: translateX(1400px) rotateY(180deg);
+  }
+}
+@keyframes go2 {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(1400px);
+  }
+}
