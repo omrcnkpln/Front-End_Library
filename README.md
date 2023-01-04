@@ -5,7 +5,7 @@ https://omrcnkpln.github.io/Front-End_library/animation_basics/
 https://omrcnkpln.github.io/Front-End_library/animation_css/
 https://omrcnkpln.github.io/Front-End_library/animation_haci-yatmaz/
 https://omrcnkpln.github.io/Front-End_library/animation_menu/
-https://omrcnkpln.github.io/Front-End_library/animation_snow/snow.html/
+https://omrcnkpln.github.io/Front-End_library/animation_snow/snow.html
 https://omrcnkpln.github.io/Front-End_library/canvas/
 https://omrcnkpln.github.io/Front-End_library/checkbox-radio/
 https://omrcnkpln.github.io/Front-End_library/color-picker/
