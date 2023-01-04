@@ -1,0 +1,110 @@
+header {
+  font-family: proxima-nova, sans-serif; }
+  header ::-moz-selection {
+    background-color: rgba(30, 144, 255, 0.2); }
+  header ::selection {
+    background-color: rgba(30, 144, 255, 0.2); }
+
+.makale {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .makale .row {
+    border: 3px solid black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px; }
+  .makale .left .writings {
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+            align-items: center;
+    background-color: white; }
+    .makale .left .writings li {
+      height: 300px;
+      display: none;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+              flex-direction: column;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+              justify-content: space-between;
+      padding: 1rem; }
+      .makale .left .writings li h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px; }
+      .makale .left .writings li p {
+        text-align: justify;
+        font-size: 20px; }
+    .makale .left .writings li.hover {
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex; }
+  .makale .right {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+            justify-content: flex-end; }
+    .makale .right .images {
+      height: 350px;
+      width: 100%;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+              justify-content: space-between; }
+      .makale .right .images li {
+        width: 20%;
+        height: 100%;
+        cursor: pointer;
+        border-left: 3px solid white;
+        position: relative;
+        -webkit-transition: 333ms all ease-in;
+           -moz-transition: 333ms all ease-in;
+             -o-transition: 333ms all ease-in;
+                transition: 333ms all ease-in; }
+        .makale .right .images li::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          -webkit-transition: 333ms all ease-in;
+             -moz-transition: 333ms all ease-in;
+               -o-transition: 333ms all ease-in;
+                  transition: 333ms all ease-in; }
+      .makale .right .images li.img-item-1 {
+        background-image: url("../../images/img1.webp");
+        background-repeat: no-repeat;
+        background-size: auto 400px;
+        background-position: center; }
+      .makale .right .images li.img-item-2 {
+        background-image: url("../../images/img2.webp");
+        background-repeat: no-repeat;
+        background-size: auto 400px;
+        background-position: center; }
+      .makale .right .images li.img-item-3 {
+        background-image: url("../../images/img3.webp");
+        background-repeat: no-repeat;
+        background-size: auto 400px;
+        background-position: center; }
+      .makale .right .images li.img-item-4 {
+        background-image: url("../../images/img4.webp");
+        background-repeat: no-repeat;
+        background-size: auto 400px;
+        background-position: center; }
+      .makale .right .images li.img-item-5 {
+        background-image: url("../../images/img5.webp");
+        background-repeat: no-repeat;
+        background-size: auto 400px;
+        background-position: center; }
+      .makale .right .images li.hover {
+        width: 60%; }
+        .makale .right .images li.hover::after {
+          background-color: rgba(0, 0, 0, 0.1); }

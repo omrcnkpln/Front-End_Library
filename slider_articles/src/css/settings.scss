@@ -1,0 +1,27 @@
+$font-type: proxima-nova;
+
+$white: #ffffff;
+$bgColor1: #809BA4;
+$bgColor2: #594D4C;
+$bgColor3: #C2A97E;
+$bgColor4: #BCB5A8;
+$bgColor5: rebeccapurple;
+$bgColor6: #0C1229;
+@mixin selection {
+  & ::-moz-selection {
+    @content;
+  }
+  & ::selection {
+    @content;
+  }
+}
+
+header {
+  font-family: $font-type, sans-serif;
+  // font-style: normal;
+  // font-weight: 100;
+  // color: $grey5;
+  @include selection {
+    background-color: rgba(30, 144, 255, 0.2);
+  }
+}

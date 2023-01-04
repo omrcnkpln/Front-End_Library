@@ -1,0 +1,103 @@
+@import "settings";
+@import "makaleSlider-mediaqueries";
+
+.makale {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .row{
+        border: 3px solid black;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 15px;
+    }
+    .left {
+        .writings {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            li {
+                height: 300px;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1rem;
+                h1 {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 20px;
+                }
+            }
+            li.hover {
+                display: flex;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        .images {
+            height: 350px;
+            width: 100%;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            display: flex;
+            justify-content: space-between;
+            li {
+                width: 20%;
+                height: 100%;
+                cursor: pointer;
+                border-left: 3px solid white;
+                position: relative;
+                transition: 333ms all ease-in;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    transition: 333ms all ease-in;
+                }
+            }
+            li.img-item-1 {
+                background-image: url("../../images/img1.webp");
+                background-repeat: no-repeat;
+                background-size: auto 400px;
+                background-position: center;
+            }
+            li.img-item-2 {
+                background-image: url("../../images/img2.webp");
+                background-repeat: no-repeat;
+                background-size: auto 400px;
+                background-position: center;
+            }
+            li.img-item-3 {
+                background-image: url("../../images/img3.webp");
+                background-repeat: no-repeat;
+                background-size: auto 400px;
+                background-position: center;
+            }
+            li.img-item-4 {
+                background-image: url("../../images/img4.webp");
+                background-repeat: no-repeat;
+                background-size: auto 400px;
+                background-position: center;
+            }
+            li.img-item-5 {
+                background-image: url("../../images/img5.webp");
+                background-repeat: no-repeat;
+                background-size: auto 400px;
+                background-position: center;
+            }
+            li.hover {
+                width: 60%;
+                &::after {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
